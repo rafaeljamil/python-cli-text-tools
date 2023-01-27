@@ -26,12 +26,15 @@ while True:
     # AJUDA
     elif comando == "ajuda":
         ajuda()
+    
     # ESPELHO
     elif comando == "espelho":
         while True:
             esp = input("esp- ")
             if esp.lower() == "voltar":
                 break
+            elif len(esp) <= 0:
+                continue
             else:
                 print("->",f.inverte_frase(esp))
 
@@ -41,6 +44,8 @@ while True:
             ini = input("ini- ")
             if ini.lower() == "voltar":
                 break
+            elif len(ini) <= 0:
+                continue
             else:
                 print("->",f.iniciais(ini))
 
@@ -50,6 +55,8 @@ while True:
             cam = input("cam- ")
             if cam.lower() == "voltar":
                 break
+            elif len(cam) <= 0:
+                continue
             else:
                 print("->",f.camelcase(cam))
 
@@ -59,6 +66,8 @@ while True:
             rot = input("r13- ")
             if rot.lower() == "voltar":
                 break
+            elif len(rot) <= 0:
+                continue
             else:
                 print("->",f.rot13(rot))
 
@@ -68,6 +77,8 @@ while True:
             mai = input("mai- ")
             if mai.lower() == "voltar":
                 break
+            elif len(mai) <= 0:
+                continue
             else:
                 print("->",mai.upper())
 
@@ -77,6 +88,8 @@ while True:
             minus = input("min- ")
             if minus.lower() == "voltar":
                 break
+            elif len(minus) <= 0:
+                continue
             else:
                 print("->",minus.lower())
 
